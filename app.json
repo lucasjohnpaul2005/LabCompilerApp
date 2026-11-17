@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Lab Compiler",
+    "slug": "lab-compiler-app",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Used to check whether you are inside a geofence."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Used to check whether you are inside a geofence."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
